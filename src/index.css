@@ -1,13 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: linear-gradient(
+    to left bottom,
+    #d4c2fc,
+    #aa97df,
+    #7f6ec2,
+    #5247a6,
+    #14248a
+  );
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.test {
+  color: #ffc7e6;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: #6d80ffb6 #f9f5ff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f9f5ff00;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6d80ffb6;
+  border-radius: 10px;
+  border: 3px solid #f9f5ff;
 }
